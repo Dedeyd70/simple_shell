@@ -1,0 +1,63 @@
+TH man 1 "14 June 2023" "1.0" "Grady Shell Manual"
+.SH NAME
+Grady - A friendly command-line interpreter for beginners and experienced users.
+
+.SH SYNOPSIS
+Grady
+
+.SH DESCRIPTION
+Grady shell is a command line interpreter that provides an environment for executing commands and  performing system operations. It reads and executes commands from standard input. Grady shell supports both built-in commands and external programs.
+
+.SH STARTING THE PROGRAM
+Once complied, to start the program, run:
+./Grady$
+
+.SH EXITING THE PROGRAM
+To exit the program, run:
+Grady $ exit
+
+.SH COMMANDS
+The following commands are supported by Grady shell:
+
+.PP
+.B cd[directory]
+Change the current working directory
+
+.PP
+.B pwd
+Print the current working directory
+
+.PP
+.B echo[arguments..]
+Display the given arguments
+
+.SH PIPELINES
+Grady shell supports command pipelines, allowing for the chaining of multiple commands. the output of one command is used as the input for the next command in the pipeline.
+
+.SH BUILT-INS
+The following built-ins are supported by the Grady shell
+
+.B env -
+Print the current environment
+
+.B setenv VARIABLE VALVUE -
+Initialize a new environment variable, or modify an existing one.
+
+.B unsetenv VARIABLE -
+Remove an environment variable.
+
+.SH RETURN VALUES
+The Grady shell program returns the following exit status values:
+.PP
+.B 0
+Successful execution
+
+.PP
+.B Non-zero
+An error occurred during execution
+
+.SH BUGS
+No known bugs.
+
+.SH AUTHOR
+Grady shell was developed by Dorothy Dede Quao(dorothyokoto@gmail.com) and Grace Amaning-Kwarteng(graceamaningkwarteng@gmail.com)
