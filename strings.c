@@ -19,7 +19,7 @@ int _strlen(const char *s)
 
 /**
  * _strcpy - function that copies the contents of a string.
- * @dest: destination of string 
+ * @dest: destination of string
  * @src: char to be used
  * Return: pointer to dest
  */
