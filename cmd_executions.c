@@ -1,12 +1,11 @@
 #include "shell.h"
 /**
- * cant_open - if file doesn't exist or lacks proper permissions
- * a cant open error.0
- * @file_path: Path to supposed file in the shell.
- *
- * Return: 130.
+ * cant_open - This writes a can't open error, 0
+ * if a file lacks the right permissions or does
+ * not exist.
+ * @path: the path to the supposed file in the shell.
+ * Return 130.
  */
-
 int cant_open(char *file_path)
 {
 	char *error, *hist_string;
@@ -37,13 +36,13 @@ int cant_open(char *file_path)
 	return (130);
 }
 /**
- * file_commands - Takes a file and run the commands stored
- * @file_path: Path to file location
- * @exe_ret: Return value of last executed command file.
- *
- * Return: If file couldn't be opened - 130.
- *	   If malloc fails - -1.
- *	   Otherwise the return value of last command line.
+ * file_command - This function takes up a file and
+ * runs the commands stored.
+ * @file_path:Path to the location of the file.
+ * @exe_ret: This returns the value of the last
+ * command executed.
+ * Returm: 130 if the file could not be opened and -1 if
+ * malloc otherwise return value of the last command line.
  */
 int file_commands(char *file_path, int *exe_ret)
 {

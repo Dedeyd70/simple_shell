@@ -111,7 +111,11 @@ void variable_replacement(char **line, int *exe_ret)
 						oldline[d] != '$' &&
 						oldline[d] != ' '; d++)
 					;
+<<<<<<< HEAD
 				length = - (j + 1);
+=======
+				length = -(j + 1);
+>>>>>>> 6165cbc1cca5b7348f12a9ee1d2e7ed688a238af
 				replacement = get_env_value(&oldline[j + 1], length);
 			}
 			newline = malloc(j + _strlen(replacement)
