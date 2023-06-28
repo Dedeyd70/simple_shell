@@ -140,7 +140,7 @@ ssize_t get_new_len(char *line)
 			else
 				logical_ops(&line[a], &new_len);
 		}
-		else if (current == ';')
+		else if (cur == ';')
 		{
 			if (a != 0 && line[a - 1] != ' ')
 				new_len++;

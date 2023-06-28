@@ -25,7 +25,7 @@ char **_copyenv(void)
 		if (!newenviron[index])
 		{
 			for (index--; index >= 0; index--)
-				free(new_environ[index]);
+				free(newenviron[index]);
 			free(newenviron);
 			return (NULL);
 		}

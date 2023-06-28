@@ -58,7 +58,7 @@ int _setenv(char **args, char __attribute__((__unused__)) **front)
 	for (s = 0; environ[s]; s++)
 		;
 
-	new_env = malloc(sizeof(char *) * (size + 2));
+	new_env = malloc(sizeof(char *) * (s + 2));
 	if (!new_env)
 	{
 		free(new_value);

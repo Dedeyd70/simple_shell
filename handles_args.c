@@ -27,7 +27,7 @@ char *get_args(char *line, int *exe_ret)
 	}
 
 	line[read_line - 1] = '\0';
-	replace_var(&line, exe_ret);
+	variable_replacement(&line, exe_ret);
 	handle_line(&line, read_line);
 
 	return (line);
@@ -85,7 +85,7 @@ int call_args(char **args, char **front, int *exe_ret)
 		}
 	}
 	args = replace_aliases(args);
-	ret = run_args(args, front, exe_ret);
+	gee = run_args(args, front, exe_ret);
 	return (gee);
 }
 /**
@@ -150,7 +150,7 @@ int handle_args(int *exe_ret)
 		free_args(args, args);
 		return (*exe_ret);
 	}
-	front = args;
+	fn = args;
 
 	for (index = 0; args[index]; index++)
 	{

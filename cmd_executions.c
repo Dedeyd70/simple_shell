@@ -9,7 +9,7 @@
 
 int cant_open(char *file_path)
 {
-	char *error, *hist_ string;
+	char *error, *hist_string;
 	int len;
 
 	hist_string = _itoa(hist);
