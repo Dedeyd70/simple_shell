@@ -5,7 +5,7 @@
  * @s: the string
  * @c: the character
  * Return: NULL if c is not found
- */ 
+ */
 char *_strchr(char *s, char c)
 {
 	int idx;
@@ -71,7 +71,7 @@ int _strcmp(char *s1, char *s2)
  * @s2: second ptr to the string
  * @n: the bytes
  * Return: difference
- */ 
+ */
 int _strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t d;
