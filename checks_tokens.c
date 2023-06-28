@@ -8,7 +8,7 @@
  */
 int token_len(char *str, char *delim)
 {
-	int idx = 0, len= 0;
+	int idx = 0, len = 0;
 
 	while (*(str + idx) && *(str + idx) != *delim)
 	{

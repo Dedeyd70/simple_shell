@@ -28,7 +28,7 @@ int (*get_builtin(char *command))(char **args, char **front)
 }
 
 /**
- * exit - terminates the normal process
+ * __exit - terminates the normal process
  * @args: an array of argument
  * @front:a double pointer
  * Return: If no arguments is found -3.

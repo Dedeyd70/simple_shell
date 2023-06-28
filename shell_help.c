@@ -1,5 +1,10 @@
 #include "shell.h"
 
+/**
+ * frre_args - freeing args
+ * @args: argument to be used
+ * @front: the pointer
+ */ 
 void free_args(char **args, char **front)
 {
 	size_t d;
@@ -106,7 +111,7 @@ void variable_replacement(char **line, int *exe_ret)
 						oldline[d] != '$' &&
 						oldline[d] != ' '; d++)
 					;
-				length =  - (j + 1);
+				length = - (j + 1);
 				replacement = get_env_value(&oldline[j + 1], length);
 			}
 			newline = malloc(j + _strlen(replacement)
