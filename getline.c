@@ -1,14 +1,14 @@
 #include "shell.h"
 
 /**
- * _realloc - reallocates a memory block using malloc and free
- * @ptr: pointer that points previous allocated memory
+ * _realloc - This reallocates a memory block of memory using
+ * malloc and free.
+ * @ptr: this pointer  points the initially allocated memory.
  * @old_size: allocated space for ptr with size in byte
  * @new_size: new memory block with size in byte
- * Return: ptr if new_size == old_size, NULL
- * if new_size == 0 and ptr is not NULL and
- * a pointer pointing  reallocated memory block otherwise
- */
+ * Return: a pointer that points to the reallocated memory
+ * otherwise return NULL if new_size == old_size,
+ * */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	void *mem;
@@ -86,9 +86,8 @@ void assign_lineptr(char **lineptr, size_t *n, char *buffer, size_t b)
  * _getline - reads input from an input stream
  * @lineptr: input storage buffer
  * @n: lineptr size
- * @stream: stream to read 
- *
- * Return: number of bytes 
+ * @stream: stream to read.
+ * Return: number of bytes.
  */
 ssize_t _getline(char **lineptr, size_t *n, FILE *stream)
 {
